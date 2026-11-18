@@ -26,7 +26,6 @@ p { margin: .65rem 0 0; }
 .pillars section { border-top: 2px solid #00572e; padding-top: 1rem; }
 .behaviour { margin: 2rem 0; }
 .day-photo { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 18px; overflow: hidden; background: #e1e9dc; }
-.placeholder { display: grid; height: 100%; place-items: center; }
 @media (max-width: 680px) {
   header { grid-template-columns: 1fr; gap: 1rem; }
   .badge { grid-row: 1; width: min(45vw, 175px); }
