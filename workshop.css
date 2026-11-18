@@ -1,0 +1,34 @@
+@font-face {
+  font-family: PizzaPilgrims;
+  src: url("pizzapilgrims.otf") format("opentype");
+  font-display: swap;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #00572e;
+  font: 1.1rem/1.6 Arial, sans-serif;
+  background: linear-gradient(rgba(245,240,232,.84), rgba(245,240,232,.84)), url("background.jpg") center / cover fixed no-repeat;
+}
+main { width: min(1050px, 90%); margin: auto; padding: 2rem 0 4rem; }
+.back { color: inherit; text-underline-offset: .22em; }
+.back:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+header { display: grid; grid-template-columns: 1fr minmax(180px, 30%); align-items: center; gap: 2rem; margin: 2rem 0; }
+h1, h2 { font-family: PizzaPilgrims, Arial, sans-serif; line-height: 1.05; font-weight: normal; margin: 0; }
+h1 { font-size: clamp(3rem, 7vw, 5.8rem); }
+h2 { font-size: clamp(2rem, 3vw, 2.6rem); }
+p { margin: .65rem 0 0; }
+.cohort, .next { font-weight: bold; }
+.cohort { margin: 0 0 .5rem; }
+.intro { margin-top: 1.4rem; font-size: 1.25rem; }
+.badge { display: block; width: 100%; height: auto; filter: drop-shadow(0 5px 5px rgba(0,48,26,.17)); }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.pillars section { border-top: 2px solid #00572e; padding-top: 1rem; }
+.behaviour { margin: 2rem 0; }
+.day-photo { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 18px; overflow: hidden; background: #e1e9dc; }
+.placeholder { display: grid; height: 100%; place-items: center; }
+@media (max-width: 680px) {
+  header { grid-template-columns: 1fr; gap: 1rem; }
+  .badge { grid-row: 1; width: min(45vw, 175px); }
+  .pillars { grid-template-columns: 1fr; gap: 1.5rem; }
+}
